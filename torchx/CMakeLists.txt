@@ -19,7 +19,7 @@ add_library(torchx MODULE ${torchx_sources})
 endif()
 
 target_link_libraries(torchx "${TORCH_LIBRARIES}")
-set_property(TARGET torchx PROPERTY CXX_STANDARD 14)
+set_property(TARGET torchx PROPERTY CXX_STANDARD 17)
 
 target_include_directories(torchx PUBLIC ${ERTS_INCLUDE_DIR})
 
